@@ -54,4 +54,11 @@
       margin: -.25rem;
     }
   }
+  /* Detail links remain absolute so they work from the hosted preview. */
+  .card--opportunity .card-link::after {
+    background-image: url("https://conductor.nd.edu/stylesheets/themes/ndt/4.0/images/icn-arrow-right.svg");
+    background-size: .65em;
+  }
+  .card--opportunity:focus-within .card-link::after,
+  .card--opportunity:hover .card-link::after { transform: translateX(.125em); }
 }
